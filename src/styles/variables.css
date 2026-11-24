@@ -1,0 +1,124 @@
+:root {
+  /* COLOR PALETTE - LIGHT MODE */
+  /* User Palette: #FF644B, #EBEBEB, #FFFFFF, #CDCDCD, #666666, #00000040 */
+  --color-primary: #FF644B;
+  --color-primary-hover: #E54E36;
+  --color-primary-light: #FFF0ED;
+
+  --color-secondary: #666666;
+  --color-secondary-hover: #4D4D4D;
+  --color-secondary-light: #EBEBEB;
+
+  --color-success: #16a34a;
+  --color-success-hover: #15803d;
+  --color-success-light: #f0fdf4;
+
+  --color-danger: #dc2626;
+  --color-danger-hover: #b91c1c;
+  --color-danger-light: #fef2f2;
+
+  --color-warning: #d97706;
+  --color-warning-hover: #b45309;
+  --color-warning-light: #fffbeb;
+
+  --color-info: #0284c7;
+  --color-info-hover: #0369a1;
+  --color-info-light: #f0f9ff;
+
+  --color-light: #FFFFFF;
+  --color-dark: #000000;
+
+  --color-bg-app: #EBEBEB;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-hover: #E0E0E0;
+
+  --color-border: #CDCDCD;
+  --color-border-hover: #B8B8B8;
+
+  --color-text-main: #000000;
+  --color-text-muted: #000000;
+  --color-text-inverse: #FFFFFF;
+  --font-color-light: #FFFFFF;
+
+  --color-disabled: #CDCDCD;
+  --color-overlay: #00000040;
+
+  /* RADIUS */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* SHADOWS */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px #00000040, 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px #00000040, 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px #00000040, 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  /* TRANSITIONS */
+  --transition-fast: 0.15s ease;
+  --transition-default: 0.2s ease;
+  --transition-slow: 0.3s ease;
+
+  /* TYPOGRAPHY */
+  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+
+  /* SPACING */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+
+  /* Z-INDEX */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-toast: 1080;
+}
+
+/* DARK THEME OVERRIDES */
+[data-theme='dark'], .dark, html.dark {
+  --color-primary: #FF644B;
+  --color-primary-hover: #FF7B64;
+  --color-primary-light: #4A1A12;
+
+  --color-secondary: #666666;
+  --color-secondary-hover: #4D4D4D;
+  --color-secondary-light: #2A2A2A;
+
+  --color-success-light: #064e3b;
+  --color-danger-light: #7f1d1d;
+  --color-warning-light: #78350f;
+  --color-info-light: #075985;
+
+  --color-bg-app: #121212;
+  --color-bg-surface: #1E1E1E;
+  --color-bg-hover: #2A2A2A;
+
+  --color-border: #333333;
+  --color-border-hover: #4D4D4D;
+
+  --color-text-main: #FFFFFF;
+  --color-text-muted: #FFFFFF;
+  --color-text-inverse: #000000;
+
+  --color-disabled: #4D4D4D;
+  --color-overlay: #00000080;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}

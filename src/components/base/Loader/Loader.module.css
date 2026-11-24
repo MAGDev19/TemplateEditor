@@ -1,0 +1,55 @@
+.spinner {
+  display: inline-block;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: transparent;
+  animation: spin 0.75s linear infinite;
+}
+
+.sm { width: 1rem; height: 1rem; border-width: 2px; }
+.md { width: 1.75rem; height: 1.75rem; border-width: 3px; }
+.lg { width: 2.5rem; height: 2.5rem; border-width: 4px; }
+.xl { width: 3.5rem; height: 3.5rem; border-width: 4px; }
+
+.variantPrimary {
+  border-top-color: var(--color-primary);
+  border-right-color: var(--color-primary);
+  border-bottom-color: var(--color-primary-light);
+  border-left-color: var(--color-primary-light);
+}
+
+.variantSecondary {
+  border-top-color: var(--color-secondary);
+  border-right-color: var(--color-secondary);
+  border-bottom-color: var(--color-border);
+  border-left-color: var(--color-border);
+}
+
+.variantLight {
+  border-top-color: #ffffff;
+  border-right-color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-bg-hover) 25%,
+    var(--color-border) 37%,
+    var(--color-bg-hover) 63%
+  );
+  background-size: 400% 100%;
+  animation: skeletonLoading 1.4s ease infinite;
+  border-radius: var(--radius-md);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes skeletonLoading {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}

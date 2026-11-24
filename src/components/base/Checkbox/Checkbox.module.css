@@ -1,0 +1,36 @@
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.checkboxWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkboxWrapper.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.checkbox {
+  width: 1.125rem;
+  height: 1.125rem;
+  accent-color: var(--color-primary);
+  border-radius: var(--radius-xs);
+  cursor: inherit;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-main);
+}
+
+.errorText {
+  font-size: var(--font-size-xs);
+  color: var(--color-danger);
+}
